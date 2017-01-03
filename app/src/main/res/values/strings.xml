@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Peti</string>
+
+    <!-- Peti Acitvity -->
+    <string name="explorer">Explorar</string>
+    <string name="petis">Mis Petis</string>
+    <string name="profile">Perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_place">Map</string>
+</resources>
