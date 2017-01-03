@@ -10,6 +10,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 public class NewPetiActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private MapFragment frgPlace;
+    private GoogleMap map;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +19,7 @@ public class NewPetiActivity extends AppCompatActivity implements OnMapReadyCall
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
+            this.map = googleMap;
     }
+
 }
