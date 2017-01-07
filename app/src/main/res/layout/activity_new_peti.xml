@@ -67,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/evidencepictures"
+        android:layout_marginBottom="5dp"
         >
 
     </RelativeLayout>
@@ -76,24 +77,37 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/typeanddescription"
         >
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/wrapperstree"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:gravity="center">
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/stree"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/stree"
-                />
-        </android.support.design.widget.TextInputLayout>
+
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"/>
+            <LinearLayout
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:background="@color/blackalpha">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/wrapperstree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight=".6">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/stree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/stree"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <ImageButton
+                android:id="@+id/location"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"/>
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
